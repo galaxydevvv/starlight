@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunar | Player</title>
+  <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body data-page="player">
+  <div class="player-shell">
+    <header class="player-header">
+      <a class="brand brand-inline" href="./index.html">lunar</a>
+      <h1 class="player-title" id="player-title">Game Name</h1>
+      <a class="player-close" href="./games.html" aria-label="Close player">x</a>
+    </header>
+
+    <div class="player-layout">
+      <aside class="sidebar">
+        <nav class="nav-stack nav-stack-player">
+          <a class="nav-pill active-home" href="./index.html">home</a>
+          <a class="nav-pill active-search" href="./search.html">search</a>
+          <a class="nav-pill active-games" href="./games.html">games</a>
+        </nav>
+      </aside>
+
+      <main class="player-main glass-panel">
+        <div class="player-status" id="player-status">Loading game file...</div>
+        <iframe class="game-frame" id="game-frame" title="Game content" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+      </main>
+    </div>
+  </div>
+
+  <script src="./assets/js/ui.js"></script>
+  <script src="./assets/js/player.js"></script>
+</body>
+</html>

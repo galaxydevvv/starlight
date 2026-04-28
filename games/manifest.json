@@ -1,0 +1,10 @@
+[
+  { "slug": "html-demo", "title": "game 1", "file": "html-demo.html", "category": "featured", "featured": true },
+  { "slug": "arcade-grid", "title": "game 2", "file": "arcade-grid.html", "category": "featured", "featured": true },
+  { "slug": "meteor-jump", "title": "game 3", "file": "meteor-jump.html", "category": "featured", "featured": true },
+  { "slug": "void-runner", "title": "void runner", "file": "void-runner.html", "category": "arcade", "featured": false },
+  { "slug": "pixel-room", "title": "pixel room", "file": "pixel-room.html", "category": "sandbox", "featured": false },
+  { "slug": "night-drift", "title": "night drift", "file": "night-drift.html", "category": "racer", "featured": false },
+  { "slug": "star-note", "title": "star note", "file": "star-note.html", "category": "creative", "featured": false },
+  { "slug": "signal-room", "title": "signal room", "file": "signal-room.html", "category": "story", "featured": false }
+]
