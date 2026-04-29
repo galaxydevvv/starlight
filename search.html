@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunar | Search</title>
+  <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body data-page="search">
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html">Lunar</a>
+      <div class="sidebar-art"></div>
+      <nav class="nav-stack">
+        <a class="nav-pill active-home" href="./index.html">home</a>
+        <a class="nav-pill active-search" href="./search.html">search</a>
+        <a class="nav-pill active-games" href="./games.html">games</a>
+      </nav>
+      <div class="sidebar-foot">
+        <p class="sidebar-label">search</p>
+        <p class="sidebar-copy">Use the embedded browser below to search or open a URL.</p>
+      </div>
+    </aside>
+
+    <main class="page search-page">
+      <section class="proxy-shell glass-panel">
+        <div class="proxy-toolbar">
+          <div class="proxy-toolbar-left">
+            <button class="browser-button icon-button" id="proxy-back" type="button" aria-label="Back">←</button>
+            <button class="browser-button icon-button" id="proxy-forward" type="button" aria-label="Forward">→</button>
+            <button class="browser-button icon-button" id="proxy-reload" type="button" aria-label="Reload">↻</button>
+            <div class="proxy-tab-indicator">1 tab</div>
+          </div>
+          <form class="search-form proxy-form" id="search-form">
+            <input class="search-input" id="search-input" type="text" placeholder="Search or type a URL" autocomplete="off" spellcheck="false" />
+            <button class="search-button" type="submit">go</button>
+          </form>
+          <div class="proxy-toolbar-right">
+            <button class="browser-button icon-button" type="button" aria-label="Fullscreen">⛶</button>
+          </div>
+        </div>
+
+        <div class="proxy-status-row">
+          <div class="browser-url" id="proxy-url">No page loaded yet.</div>
+          <p class="search-hint" id="proxy-status">Proxy idle. Launch a search to start Scramjet.</p>
+        </div>
+
+        <section class="browser-panel browser-panel-inline">
+        <iframe class="proxy-frame" id="proxy-frame" title="Proxied browser" referrerpolicy="no-referrer"></iframe>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="./assets/vendor/baremux/index.js"></script>
+  <script src="./assets/vendor/scram/scramjet.all.js"></script>
+  <script src="./assets/js/ui.js"></script>
+  <script src="./assets/js/proxy.js"></script>
+  <script src="./assets/js/search.js"></script>
+</body>
+</html>

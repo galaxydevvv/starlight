@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunar | Home</title>
+  <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body data-page="home">
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html">Lunar</a>
+      <div class="sidebar-art"></div>
+      <nav class="nav-stack">
+        <a class="nav-pill active-home" href="./index.html">home</a>
+        <a class="nav-pill active-search" href="./search.html">search</a>
+        <a class="nav-pill active-games" href="./games.html">games</a>
+      </nav>
+      <div class="sidebar-foot">
+        <p class="sidebar-label">fast links</p>
+        <p class="sidebar-copy">Clean launcher layout with built-in search and a game shelf.</p>
+      </div>
+    </aside>
+
+    <main class="page home-page">
+      <section class="hero hero-home glass-panel">
+        <p class="eyebrow">featured launcher</p>
+        <h1 class="logo-text">Lunar</h1>
+        <p class="tagline">Play, search, and launch from one clean dashboard.</p>
+        <div class="hero-actions">
+          <a class="hero-button primary" href="./games.html">browse games</a>
+          <a class="hero-button" href="./search.html">open search</a>
+        </div>
+      </section>
+
+      <section class="home-strip glass-panel">
+        <div class="mini-stat">
+          <span class="mini-stat-label">visitors</span>
+          <strong id="visitor-count">...</strong>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-stat-label">games</span>
+          <strong>8</strong>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-stat-label">search</span>
+          <strong>ready</strong>
+        </div>
+      </section>
+
+      <aside class="featured-panel glass-panel">
+        <div class="panel-heading">
+          <h2>featured games</h2>
+          <a class="panel-link" href="./games.html">see all</a>
+        </div>
+        <div class="featured-list" id="featured-games"></div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="./assets/js/ui.js"></script>
+  <script src="./assets/js/home.js"></script>
+  <script src="./assets/js/users.js"></script>
+</body>
+</html>
